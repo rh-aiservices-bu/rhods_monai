@@ -12,7 +12,7 @@ speed on some necessary technical details of deep learning.
 ---
 
 
-|  | **Getting Started**                                  |                                                         Links                                                              |
+|  | **Getting Started**                                  |                                                              Links                                                         |
 |-:|:----------------------------------------------------:|:---------------------------------------------------------------------------------------------------------------------------|
 | 1| MONAI Documentation                                  | [Click Here](https://github.com/Project-MONAI/MONAI)                                                                       |
 | 2| Streamlit Documentation                              | [Click Here](https://docs.streamlit.io/)                                                                                   |

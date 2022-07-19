@@ -19,3 +19,11 @@ speed on some necessary technical details of deep learning.
 | 3| Using RHODS with GPUs Tutorial                       | [Click Here](https://docs.google.com/presentation/d/1djPRIfaCmX_u5Bvw_qr3dUkO6r-gGXlQ8Df6SUbb8sk/edit?pli=1#slide=id.p)    |
 | 4| MedMNIST Documentation                               | [Click Here](https://github.com/MedMNIST/MedMNIST)                                                                                   |
 --- 
+
+**Testing the Application** 
+
+In order to test the functionality of the application you will need 
+to have access to medical images. Sample images from the MedMNIST dataset 
+can be found [here](https://www.kaggle.com/datasets/andrewmvd/medical-mnist)
+
+**HIPAA Disclaimer**

@@ -1,5 +1,6 @@
 import streamlit as st
 from streamlit_option_menu import option_menu
+from skimage.transform import resize
 
 from typing import Text
 

@@ -7,10 +7,14 @@ st.sidebar.markdown("# Classification")
 imtype = option_menu("Select Image Type", ["2D Classification", "3D Classification"], menu_icon="image",default_index=0)
 if imtype == "2D Classification": 
     file = st.file_uploader('Upload An Image')
+    image = Image.open(file)
+    st.image(image, caption='Uploaded Image.', use_column_width=True)
     st.write("For testing purposes, you can select a sample image here")
     st.button("Rerun")
 
 if imtype == "3D Classification":
     file = st.file_uploader('Upload An Image')
+    image = Image.open(file)
+    st.image(image, caption='Uploaded Image.', use_column_width=True)
     st.write("For testing purposes, you can select a sample image here")
     st.button("Rerun")

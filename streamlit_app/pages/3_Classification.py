@@ -1,8 +1,9 @@
 import streamlit as st
+import os
 from streamlit_option_menu import option_menu
 from skimage.transform import resize
-
 from typing import Text
+import gdown
 
 import monai.deploy.core as md
 from monai.deploy.core import (
@@ -18,8 +19,10 @@ from monai.deploy.core import (
 from monai.deploy.operators.dicom_text_sr_writer_operator import DICOMTextSRWriterOperator, EquipmentInfo, ModelInfo
 from monai.transforms import AddChannel, Compose, EnsureType, ScaleIntensity
 
-MEDNIST_CLASSES = ["AbdomenCT", "BreastMRI", "CXR", "ChestCT", "Hand", "HeadCT"]
+#url="https://drive.google.com/uc?id=1yJ4P-xMNEfN6lIOq_u6x1eMAq1_MJu-E"
+# gdown.download_folder(url, quiet=True, use_cookies=False)
 
+MEDNIST_CLASSES = ["AbdomenCT", "BreastMRI", "CXR", "ChestCT", "Hand", "HeadCT"]
 
 @md.input("image", Image, IOType.IN_MEMORY)
 @md.output("image", Image, IOType.IN_MEMORY)
@@ -53,23 +56,25 @@ class MedNISTClassifierOperator(Operator):
         import json
 
         import torch
-        
+        from torch import jit
+
         img = PILImage.open(file)
         image = np.asarray(img)/255
         image = resize(image, (64,64)) # (64, 64), uint8
         image_tensor = self.transform(image)  # (1, 64, 64), torch.float64
         image_tensor = image_tensor[None].float()  # (1, 1, 64, 64), torch.float32
-
         device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
+        #device = torch.device("cpu")
+        print("hi")
         image_tensor = image_tensor.to(device)
-
+        print("hello")
         model = context.models.get()  # get a TorchScriptModel object
+        #model = jit.load("models/classifier.zip")
 
         with torch.no_grad():
             outputs = model(image_tensor)
 
         _, output_classes = outputs.max(dim=1)
-
         result = MEDNIST_CLASSES[output_classes[0]]  # get the class name
         print(result)
         op_output.set(result, "result_text")
@@ -85,7 +90,7 @@ class MedNISTClassifierOperator(Operator):
             json.dump(result, fp)
 
 
-@md.resource(cpu=1, gpu=1, memory="1Gi")
+@md.resource(cpu=1, gpu=1, memory="2Gi")
 class App(Application):
     """Application class for the MedNIST classifier."""
 
@@ -118,8 +123,9 @@ if __name__ == "__main__":
             img = PILImage.open(file)
             st.image(img, use_column_width=True)
             if st.button("Click Here to Classify"):
-                App(do_run=True)
-
+                #App(do_run=True)
+                app = App()
+                app.run(input="input", output="output", model="/opt/app-root/src/rhods_monai/streamlit_app/models/classifier.zip")
 
 if imtype == "3D Classification":
     file = st.file_uploader('Upload An Image')

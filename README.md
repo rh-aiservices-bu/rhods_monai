@@ -18,6 +18,7 @@ speed on some necessary technical details of deep learning.
 | 2| Streamlit Documentation                              | [Click Here](https://docs.streamlit.io/)                                                                                   |
 | 3| Using RHODS with GPUs Tutorial                       | [Click Here](https://docs.google.com/presentation/d/1djPRIfaCmX_u5Bvw_qr3dUkO6r-gGXlQ8Df6SUbb8sk/edit?pli=1#slide=id.p)    |
 | 4| MedMNIST Documentation                               | [Click Here](https://github.com/MedMNIST/MedMNIST)                                                                                   |
+| 5| Project Presentation                               | Coming soon                                                                                   |
 --- 
 
 

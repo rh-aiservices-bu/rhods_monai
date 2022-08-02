@@ -1,5 +1,4 @@
 import streamlit as st
-from streamlit_option_menu import option_menu
 from typing import Text
 
 import monai.deploy.core as md
@@ -97,8 +96,8 @@ if __name__ == "__main__":
             st.write("For testing purposes, you can select a sample image [here](https://www.kaggle.com/datasets/andrewmvd/medical-mnist)")
             if file:
                 img = PILImage.open(file)
-                st.image(img, use_column_width=True)
+                st.image(img, caption="Uploaded Image",use_column_width=True)
                 if st.button("Click Here to Classify"):
                     App(do_run=True)
-               # app = App()
-                #app.run(input="input", output="output", model="/opt/app-root/src/rhods_monai/streamlit_app/models/classifier.zip")
+                # app = App()
+                # app.run(input="input", output="output", model="/opt/app-root/src/rhods_monai/streamlit_app/models/classifier.zip")

@@ -1,8 +1,6 @@
-FROM quay.io/guimou/s2i-monai-notebook:latest
+FROM quay.io/guimou/s2i-monai-notebook-ubi9-py39:0.1.0
 
 EXPOSE 8080
-
-RUN pip install monai-deploy-app-sdk streamlit-option-menu
 
 COPY streamlit_app /opt/app-root/src/rhods_monai/streamlit_app
 

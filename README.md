@@ -30,4 +30,5 @@ can be found [here](https://www.kaggle.com/datasets/andrewmvd/medical-mnist).
 
 
 **HIPAA Disclaimer**
+
 The [HIPAA Privacy Rule](https://www.hhs.gov/hipaa/for-professionals/privacy/index.html#:~:text=The%20HIPAA%20Privacy%20Rule&text=The%20Rule%20requires%20appropriate%20safeguards,information%20without%20an%20individual's%20authorization.) protects all individually identifiable health information held or transmitted by a covered entity or its business associate, in any form or media, whether electronic, paper, or oral.

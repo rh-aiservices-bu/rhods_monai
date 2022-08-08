@@ -28,7 +28,7 @@ In order to test the functionality of the application you will need
 to have access to medical images. Sample images from the MedMNIST dataset 
 can be found [here](https://www.kaggle.com/datasets/andrewmvd/medical-mnist).
 
-Follow [this tutorial](../tutorial/deploy_app.md) to test the application. 
+Follow [this tutorial](./tutorial/deploy_app.md) to test the application. 
 
 Please consider sharing your feedback via this form.
 

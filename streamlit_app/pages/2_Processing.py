@@ -20,10 +20,13 @@ class GaussianOperator(Operator):
         from skimage.io import imsave
 
         data_in = op_input.get().asnumpy()
-        data_out = gaussian(data_in, sigma=0.2)
+        data_out = gaussian(data_in, sigma=sval)
         
         # Display Processed Image
         st.image(data_out, caption="Processed Image", use_column_width=True)
+        
+        dwnld = st.button("Download")
+        
 
       #  output_folder = op_output.get().path
       #  output_path = output_folder / "final_output.png"
@@ -121,6 +124,8 @@ if __name__ == "__main__":
         if file:
             img = PILImage.open(file)
             st.image(img, caption = "Uploaded Image", use_column_width=True)
+            st.write("### Select value for Sigma")
+            sval = st.slider("The role of sigma in the Gaussian filter is to control the variation around its mean value. So as the sigma becomes larger the more variance allowed around mean, the blurrier the resulting image will be. Default sigma = 0.2", 0.0,2.0,0.2)
             go = st.button("Click Here to Process")
             if go:
                 App(do_run=True)

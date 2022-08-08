@@ -6,8 +6,7 @@ RHODS (Red Hat Openshift Data Science) by leveraging MONAI (Medical Open Network
 
 **Written by Maria Shevchuk, 7-12-2022**
 
-Welcome to my project! The following resources will help you get up to
-speed on some necessary technical details of deep learning. 
+Welcome to my project! You may find the following resources helpful for this project:
 
 ---
 
@@ -17,8 +16,12 @@ speed on some necessary technical details of deep learning.
 | 1| MONAI Documentation                                  | [Click Here](https://github.com/Project-MONAI/MONAI)                                                                       |
 | 2| Streamlit Documentation                              | [Click Here](https://docs.streamlit.io/)                                                                                   |
 | 3| Using RHODS with GPUs Tutorial                       | [Click Here](https://docs.google.com/presentation/d/1djPRIfaCmX_u5Bvw_qr3dUkO6r-gGXlQ8Df6SUbb8sk/edit?pli=1#slide=id.p)    |
-| 4| MedMNIST Documentation                               | [Click Here](https://github.com/MedMNIST/MedMNIST)                                                                                   |
-| 5| Project Presentation                               | Coming soon                                                                                   |
+| 4| RHODS Streamlit Add-on                               | [Click Here](./tutorials/streamlit_add_on)  |
+
+| 5| MedMNIST Documentation                               | [Click Here](https://github.com/MedMNIST/MedMNIST)                                                                                   |
+| 6| Project Presentation Slides                          | Coming soon   |
+
+| 7| Project Presentation Recording                       | Coming soon   |
 --- 
 
 

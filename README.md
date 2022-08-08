@@ -11,12 +11,12 @@ Welcome to my project! You may find the following resources helpful for this pro
 ---
 
 
-|  | **Getting Started**                                  |                                                              Links                                                         |
+|  | **Resource**                                  |                                                              Link                                                         |
 |-:|:----------------------------------------------------:|:---------------------------------------------------------------------------------------------------------------------------|
 | 1| MONAI Documentation                                  | [Click Here](https://github.com/Project-MONAI/MONAI)                                                                       |
 | 2| Streamlit Documentation                              | [Click Here](https://docs.streamlit.io/)                                                                                   |
 | 3| Using RHODS with GPUs Tutorial                       | [Click Here](https://docs.google.com/presentation/d/1djPRIfaCmX_u5Bvw_qr3dUkO6r-gGXlQ8Df6SUbb8sk/edit?pli=1#slide=id.p)    |
-| 4| RHODS Streamlit Add-on                               | [Click Here](./tutorial/streamlit_add_on)  |
+| 4| RHODS Streamlit Add-on                               | [Click Here](./tutorial/streamlit_add_on.md)  |
 | 5| MedMNIST Documentation                               | [Click Here](https://github.com/MedMNIST/MedMNIST)  |
 | 6| Project Presentation Slides                          | Coming soon   |
 | 7| Project Presentation Recording                       | Coming soon   |

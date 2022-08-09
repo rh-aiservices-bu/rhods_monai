@@ -8,12 +8,16 @@ RHODS (Red Hat Openshift Data Science) by leveraging MONAI (Medical Open Network
 
 In this repository you can find: 
 
+|  | **File/Folder**                   |                                  Description                               |
+|-:|:---------------------------------:|:---------------------------------------------------------------------------|
+| 1| [streamlit_app](./streamlit_app)  |  Contains application source code and related files  |
+| 2| [tutorial](./tutorial)            |  Contains instructions to deploy the app  |
+| 3| [Dockerfile](./Dockerfile)        |  Text file used to configure the docker image  |
 
 ## Resources
 
 You may find the following resources helpful for this project:
 
----
 
 
 |  | **Resource**                                  |                                                              Link                                                         |
@@ -25,7 +29,6 @@ You may find the following resources helpful for this project:
 | 5| MedMNIST Documentation                               | [Click Here](https://github.com/MedMNIST/MedMNIST)  |
 | 6| Project Presentation Slides                          | Coming soon   |
 | 7| Project Presentation Recording                       | Coming soon   |
---- 
 
 
 ## Testing the Application

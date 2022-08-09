@@ -13,4 +13,4 @@ st.button("Feedback Form")
 st.write("### Source Code")
 st.write("This is an open source project. All source code and documentation can be found on GitHub.")
 if st.button("GitHub Repo"): 
-  webbrowser.open_new_tab(https://github.com/rh-aiservices-bu/rhods_monai.git)
+  webbrowser.open_new_tab('https://github.com/rh-aiservices-bu/rhods_monai.git')

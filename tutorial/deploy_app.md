@@ -1,9 +1,6 @@
 # Deploying the Application 
 
-https://console-openshift-console.apps.rhods-internal.61tk.p1.openshiftapps.com/
-
-By the end of this tutorial you will learn how to package and deploy the Anomaly Detection demo application that allows the user to visualize pump data along with associated anomalies.
-
+By the end of this tutorial you will learn how to package and deploy this application which allows the user to Process, Classify, and Segment medical images. 
 
 In order to deploy the anomaly detection demo, 
 

@@ -1,4 +1,5 @@
 import streamlit as st
+import webbrowser
 
 st.markdown("# RHODS x MONAI")
 st.sidebar.markdown("# RHODS x MONAI")

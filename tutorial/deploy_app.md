@@ -6,7 +6,7 @@ In order to deploy the anomaly detection demo,
 
   1. Go to the [OpenShift Console](https://console-openshift-console.apps.rhods-internal.61tk.p1.openshiftapps.com/) and log in with your credentials. This environment is availabe to any Red Hat employee who wants to use RHODS for their Data Science needs.
 
-![alt-text](./images/deplot-1.png "image_tooltip")
+![alt-text](./images/deploy-1.png "image_tooltip")
 
   2. Once you sign in, switch your view from Developer -> Administratior (located at the top of the sidebar). The Administrator view allows you to see every component of the cluster.
 

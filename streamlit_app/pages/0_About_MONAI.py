@@ -1,13 +1,13 @@
 import streamlit as st
 from PIL import Image
 
-image = Image.open('/opt/app-root/src/rhods_monai/streamlit_app/images/monai_logo.png')
-st.image(image)
-
 st.markdown("# About MONAI")
 st.sidebar.markdown("# About MONAI")
 
-st.write("**(### Medical Open Network for Artificial Intelligence)**")
+image = Image.open('/opt/app-root/src/rhods_monai/streamlit_app/images/monai_logo.png')
+st.image(image)
+
+st.write("### ( Medical Open Network for Artificial Intelligence)")
 
 st.write("Project MONAI was originally started by NVIDIA & King’s College London to establish an inclusive community of AI researchers for the development and exchange of best practices for AI in healthcare imaging across academia and enterprise researchers.")
 

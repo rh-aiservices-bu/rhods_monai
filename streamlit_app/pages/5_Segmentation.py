@@ -5,6 +5,8 @@ import subprocess
 import sys
 
 subprocess.check_call([sys.executable, "-m", "pip", "install", "SimpleITK"])
+subprocess.check_call([sys.executable, "-m", "pip", "install", "nibabel"])
+subprocess.check_call([sys.executable, "-m", "pip", "install", "nilearn"])
     
 import SimpleITK as sitk
 import nibabel as nib

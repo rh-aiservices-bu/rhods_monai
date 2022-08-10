@@ -4,7 +4,7 @@ from PIL import Image
 import subprocess
 import sys
 
-subprocess.check_call([sys.executable, "-m", "pip", "install", SimpleITK])
+subprocess.check_call([sys.executable, "-m", "pip", "install", "SimpleITK"])
     
 import SimpleITK as sitk
 import nibabel as nib

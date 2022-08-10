@@ -2,6 +2,10 @@ import streamlit as st
 from streamlit_option_menu import option_menu
 from PIL import Image
 
+import SimpleITK as sitk
+import nibabel as nib
+from nilearn import plotting, image
+
 st.markdown("# Segmentaion")
 st.sidebar.markdown("# Segmentation")
 
@@ -23,11 +27,9 @@ if imtype == "Spleen":
     st.write("By checking the box below, you certify that any media uploaded is your own or publicly accessible and comply with the HIPAA guidelines")
     agree = st.checkbox("I agree")
     if agree:
-        file = st.file_uploader('Upload An Image')
+        file = st.file_uploader('Upload A 3D Image (dcm)', accept_multiple_files=True)
         st.write("For testing purposes, you can select a sample image [here](https://www.kaggle.com/datasets/andrewmvd/medical-mnist)")
         if file:
-            img = Image.open(file)
-            st.image(img, use_column_width=True)
             st.button("Click Here to Segment")
 
 if imtype == "Lung":

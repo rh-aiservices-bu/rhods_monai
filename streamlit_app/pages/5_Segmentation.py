@@ -1,7 +1,11 @@
 import streamlit as st
 from streamlit_option_menu import option_menu
 from PIL import Image
+import subprocess
+import sys
 
+subprocess.check_call([sys.executable, "-m", "pip", "install", SimpleITK])
+    
 import SimpleITK as sitk
 import nibabel as nib
 from nilearn import plotting, image

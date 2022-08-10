@@ -12,4 +12,4 @@ st.button("Feedback Form")
 
 st.write("### Source Code")
 st.write("This is an open source project. All source code and documentation can be found on GitHub.")
-st.button("[GitHub Repo](https://github.com/rh-aiservices-bu/rhods_monai.git)"): 
+st.button("[GitHub Repo](https://github.com/rh-aiservices-bu/rhods_monai.git)")

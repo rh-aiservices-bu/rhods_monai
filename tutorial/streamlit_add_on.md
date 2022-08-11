@@ -24,3 +24,5 @@ In order to access the Add-On,
   Note: The file you want to Streamlit must be a python file (cannot be a notebook file). 
   
   ![alt-text](./images/stream-4.png "image_tooltip")
+
+  Your app will open in a new webpage. 

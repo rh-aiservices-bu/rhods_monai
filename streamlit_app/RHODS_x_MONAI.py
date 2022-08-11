@@ -8,8 +8,7 @@ st.write("The MONAI (Medical Open Network for Artificial Intelligence) framework
 
 st.write("### Feedback")
 st.write("Please consider sharing your feedback via the form below. All suggestions are welcome and appreciated!")
-st.button("Feedback Form")
-
+st.markdown("[Feedback Form](https://docs.google.com/forms/d/e/1FAIpQLSdfqcUZFNHj15TKVNK2WGziIivCnMyMQ4mM8ehceVXvpZreIg/viewform?usp=sf_link)")
 st.write("### Source Code")
 st.write("This is an open source project. All source code and documentation can be found on GitHub.")
 st.markdown("[GitHub Repo](https://github.com/rh-aiservices-bu/rhods_monai)")

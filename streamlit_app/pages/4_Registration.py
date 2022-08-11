@@ -4,6 +4,7 @@ from PIL import Image
 
 st.markdown("# Registration")
 st.sidebar.markdown("# Registration")
+st.sidebar.write("Transforms input image into ‘best’ (common frame of ref) orientation.")
 
 st.write("The [HIPAA Privacy Rule](https://www.hhs.gov/hipaa/for-professionals/privacy/index.html#:~:text=The%20HIPAA%20Privacy%20Rule&text=The%20Rule%20requires%20appropriate%20safeguards,information%20without%20an%20individual's%20authorization.) protects all individually identifiable health information held or transmitted by a covered entity or its business associate, in any form or media, whether electronic, paper, or oral.")
 st.write("By checking the box below, you certify that any media uploaded is your own or publicly accessible and comply with the HIPAA guidelines")

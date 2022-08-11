@@ -46,3 +46,41 @@ In order to deploy the anomaly detection demo,
   9. Once the Builder Image has been detected, you should see that Dockerfile has been automatically selected as the import strategy.
 
   ![alt-text](./images/deploy-9.png "image_tooltip")
+
+  10. Scroll down and take note of the Application name. Make sure that the "Deployment" option is selected under "Resources". Under "Advanced options" leave the Target port at the default 8080 and make sure that the "Create a route to the Application" box is checked - this will create a public URL to your application. Once you ensure that all settings are correct, click "Create". 
+
+![alt-text](./images/deploy-10.png "image_tooltip")
+
+![alt-text](./images/deploy-10.5.png "image_tooltip")
+
+  11. Since our application requires a GPU for certain tasks, we will need to edit the code in our deployment method to ensure that our application is deployed on a node that has a GPU. Locate the "Actions" dropdown menu and select "Edit Deployment" 
+
+     Note: Skip steps 11 through 14 if you do not have access to a GPU (or if you are unsure). 
+     
+![alt-text](./images/deploy-11.png "image_tooltip")
+
+  12. Switch the view from "Form view" to "YAML view". 
+
+![alt-text](./images/deploy-12.png "image_tooltip")
+
+  13. In the YAML file, locate "resources" object (line 129), it should be empty. 
+
+![alt-text](./images/deploy-13.png "image_tooltip")
+
+  14. To request a GPU, add the following code: 
+
+    resources: 
+      requests: 
+        nvidia.com/gpu: '1'
+       limits: 
+        nvidia.com/gpu: '1'
+        
+  Refer to the image below to check and click "Save". 
+  
+  ![alt-text](./images/deploy-14.png "image_tooltip")
+  
+  15. Once the build is complete, go back to the "Topology" page. You now have access to the URL for your Application.
+
+  ![alt-text](./images/deploy-15.png "image_tooltip")
+
+  

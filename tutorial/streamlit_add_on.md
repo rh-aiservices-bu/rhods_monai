@@ -1,6 +1,6 @@
 # Streamlit Add-On
 
-In this tutorial you will learn how to use the Streamlit Add-On on a RHODS Jupyter notebook. 
+In this tutorial you will learn how to use the Streamlit Add-On within the RHODS environment. 
 
 In order to access the Add-On, 
 

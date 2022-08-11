@@ -27,20 +27,22 @@ In order to deploy the anomaly detection demo,
   
   5. Once you are done creating your project, switch back to the Developer view, where we will containerize the source code from GitHub. 
 
-![alt-text](./images/deployment-5.png "image_tooltip")
+![alt-text](./images/deploy-5.png "image_tooltip")
 
   6. Once in the developer view, check that the correct project is selected from the dropdown menu at the top of the page. Then, head to the "+Add" page.
 
-![alt-text](./images/deployment-6.png "image_tooltip")
+![alt-text](./images/deploy-6.png "image_tooltip")
 
   7. Locate the "Git Repository" section and click "Import from Git". 
 
-![alt-text](./images/deployment-7.png "image_tooltip")
+![alt-text](./images/deploy-7.png "image_tooltip")
 
-  8. You will now need to provide the [GitHub URL](https://github.com/Enterprise-Neurosystem/edge-demo-anomaly-detection) for the Anomaly Detection Demo. 
+  8. You will now need to provide the [GitHub URL](https://github.com/rh-aiservices-bu/rhods_monai.git) that contains the source code. 
   
-    URL: https://github.com/Enterprise-Neurosystem/edge-demo-anomaly-detection
+    URL: https://github.com/rh-aiservices-bu/rhods_monai.git
   
-  ![alt-text](./images/deployment-8.png "image_tooltip")
+  ![alt-text](./images/deploy-8.png "image_tooltip")
   
-  9. Once the Builder Image has been detected, you should see that Python 3.9 (UBI 8) has been automatically selected as the import strategy. This demo utilizes a different version of Python, so you will need to click on "Edit Import Strategy". 
+  9. Once the Builder Image has been detected, you should see that Dockerfile has been automatically selected as the import strategy.
+
+  ![alt-text](./images/deploy-9.png "image_tooltip")

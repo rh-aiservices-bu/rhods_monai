@@ -48,4 +48,4 @@ The [HIPAA Privacy Rule](https://www.hhs.gov/hipaa/for-professionals/privacy/ind
 
 ## Feedback 
 
-Please consider sharing your feedback via this form. All suggestions are welcome and appreciated!
+Please consider sharing your feedback via [this form](https://docs.google.com/forms/d/e/1FAIpQLSdfqcUZFNHj15TKVNK2WGziIivCnMyMQ4mM8ehceVXvpZreIg/viewform?usp=sf_link). All suggestions are welcome and appreciated!

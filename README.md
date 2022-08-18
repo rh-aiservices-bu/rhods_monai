@@ -4,6 +4,10 @@ This repository documents my project as a Red Hat intern (summer 2022).
 This projects aims to demonstrate the app development capabilities using 
 RHODS (Red Hat Openshift Data Science) by leveraging MONAI (Medical Open Network for AI).
 
+## Application Preview 
+
+![demo gif](/tutorial/images/app_preview.gif)
+
 ## Contents
 
 In this repository you can find: 
